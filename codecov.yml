@@ -1,7 +1,10 @@
+codecov:
+  require_ci_to_pass: yes
+
 coverage:
   parsers:
     javascript:
-      enable_partials: false
+      enable_partials: no
   status:
     project:
       default:
