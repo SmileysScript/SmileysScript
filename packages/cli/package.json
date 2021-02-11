@@ -1,11 +1,10 @@
 {
-  "name": "smileysscript",
+  "name": "@smileysscript/cli",
   "version": "0.0.1",
-  "description": "The Main SmileysScript Package.",
+  "description": "The CLI for SmileysScript.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
   "license": "MIT",
-  "main": "src/smileysscript.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SmileysScript/SmileysScript.git"
@@ -20,10 +19,9 @@
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
   "dependencies": {
-      "@smileysscript/cli": "0.0.1",
-      "@smileysscript/generator": "0.0.1",
-      "@smileysscript/lexer": "0.0.1",
-      "@smileysscript/parser": "0.0.1",
+      "chalk": "^4.1.0",
+      "commander": "^7.0.0",
+      "smileysscript": "0.0.1",
       "@smileysscript/util": "0.0.1"
   },
   "devDependencies": {
