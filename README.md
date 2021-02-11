@@ -50,4 +50,4 @@ A contributing guide is coming soon.  You can help now, but I would recommend si
 
 ### How is the repo structured?
 
-The Babel repo is managed as a monorepo that is composed of multiple npm packages, each with their own function.
+This repo is managed as a monorepo that is composed of multiple npm packages, each with their own function.
