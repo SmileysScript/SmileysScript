@@ -4,11 +4,11 @@
   "private": true,
   "description": "The Official SmileysScript Repo!",
   "scripts": {
-    "test": "lerna run test --stream && istanbul report",
+    "test": "lerna run test --stream && istanbul report clover html",
     "prettier": "lerna run prettier --stream",
     "prettier-check": "lerna run prettier-check --stream",
     "lint": "lerna run lint --stream",
-    "bootstrap": "lerna bootstrap && lerna link"
+    "bootstrap": "lerna bootstrap --hoist && lerna link"
   },
   "repository": {
     "type": "git",
