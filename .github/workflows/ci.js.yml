@@ -74,7 +74,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage/clover.xml
-      - name: Atrifact Coverage Report
+      - name: Artifact Coverage Report
         uses: actions/upload-artifact@v2
         with:
           name: Coverage Report
