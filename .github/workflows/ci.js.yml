@@ -1,0 +1,82 @@
+# This is The CI Workflow
+
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test-coverage:
+    name: Test On Different Node Versions
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lerna Setup
+        run: npm run bootstrap
+      - name: Run Tests
+        run: npm test
+  prettier-check:
+    name: Prettier Check
+    needs: test-coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use Node.js latest
+        uses: actions/setup-node@v2-beta
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lerna Setup
+        run: npm run bootstrap
+      - name: Run Prettier Check
+        run: npm run prettier-check
+  lint:
+    name: Lint
+    needs: test-coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use Node.js latest
+        uses: actions/setup-node@v2-beta
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lerna Setup
+        run: npm run bootstrap
+      - name: Run Lint
+        run: npm run lint
+  upload-coverage:
+    name: Upload Coverage Report
+    needs: [lint, prettier-check]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use Node.js latest
+        uses: actions/setup-node@v2-beta
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lerna Setup
+        run: npm run bootstrap
+      - name: Run Test
+        run: npm run test
+      - name: Upload Coverage Report
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/clover.xml
+      - name: Atrifact Coverage Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Coverage Report
+          path: coverage/
+          retention-days: 7
