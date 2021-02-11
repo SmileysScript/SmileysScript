@@ -1,0 +1,35 @@
+{
+  "name": "smileysscript",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The Official SmileysScript Repo!",
+  "scripts": {
+    "test": "lerna run test --stream && istanbul report",
+    "prettier": "lerna run prettier --stream",
+    "prettier-check": "lerna run prettier-check --stream",
+    "lint": "lerna run lint --stream",
+    "bootstrap": "lerna bootstrap && lerna link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmileysScript/SmileysScript.git"
+  },
+  "author": "JRed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmileysScript/SmileysScript/issues"
+  },
+  "homepage": "https://SmileysScript.JRed.io",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "istanbul": "^0.4.5",
+    "jest": "^26.6.3",
+    "lerna": "^3.22.1",
+    "prettier": "2.2.1"
+  }
+}
