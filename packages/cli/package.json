@@ -18,9 +18,13 @@
   "bugs": {
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
+  "bin": {
+    "smileysscript": "./bin/smileysscript.js"
+  },
   "dependencies": {
       "chalk": "^4.1.0",
       "commander": "^7.0.0",
+      "glob": "^7.1.6",
       "smileysscript": "0.0.1",
       "@smileysscript/util": "0.0.1"
   },
