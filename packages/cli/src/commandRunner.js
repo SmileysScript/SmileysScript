@@ -15,20 +15,20 @@ program.parse(process.argv);
 
 const opts = program.opts();
 
-glob(opts.source+"/**.😀", {}, (err, files) => {
-    if(err) {
-        throw new Error(err);
-    }
-    files.forEach((file) => {
-        processFile(opts.source, file, opts.output);
-    });
+glob(opts.source + "/**.😀", {}, (err, files) => {
+  if (err) {
+    throw new Error(err);
+  }
+  files.forEach((file) => {
+    processFile(opts.source, file, opts.output);
+  });
 });
 
-glob(opts.source+"/**.smiley", {}, (err, files) => {
-    if(err) {
-        throw new Error(err);
-    }
-    files.forEach((file) => {
-        processFile(opts.source, file, opts.output);
-    });
+glob(opts.source + "/**.smiley", {}, (err, files) => {
+  if (err) {
+    throw new Error(err);
+  }
+  files.forEach((file) => {
+    processFile(opts.source, file, opts.output);
+  });
 });
