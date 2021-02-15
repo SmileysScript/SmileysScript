@@ -31,8 +31,8 @@ There are two major branches in this repo, beta and stable.  The stable branch i
 
 Branch | Version | CI Status | Coverage
 ------ | ------- | --------- | --------
-stable | ![Stable Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/stable) | ![Stable Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/stable) | ![Stable Coverage](https://img.shields.io/codecov/c/github/SmileysScript/SmileysScript/stable)
-beta | ![Beta Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/beta) | ![Beta Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/beta) | ![Beta Coverage](https://img.shields.io/codecov/c/github/SmileysScript/SmileysScript/beta)
+stable | ![Stable Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/stable) | ![Stable Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/stable) | ![Stable Coverage](https://codecov.io/gh/SmileysScript/SmileysScript/branch/stable/graph/badge.svg?token=9CZQ2OYJSY)
+beta | ![Beta Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/beta) | ![Beta Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/beta) | ![Beta Coverage](https://codecov.io/gh/SmileysScript/SmileysScript/branch/beta/graph/badge.svg?token=9CZQ2OYJSY)
 
 ## FAQ
 
