@@ -1,6 +1,6 @@
 {
   "name": "smileysscript",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "The Main SmileysScript Package.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
@@ -20,11 +20,11 @@
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
   "dependencies": {
-      "@smileysscript/cli": "0.0.1",
-      "@smileysscript/generator": "0.0.1",
-      "@smileysscript/lexer": "0.0.1",
-      "@smileysscript/parser": "0.0.1",
-      "@smileysscript/util": "0.0.1"
+      "@smileysscript/cli": "0.0.0",
+      "@smileysscript/generator": "0.0.0",
+      "@smileysscript/lexer": "0.0.0",
+      "@smileysscript/parser": "0.0.0",
+      "@smileysscript/util": "0.0.0"
   },
   "devDependencies": {
       "eslint": "^7.19.0",

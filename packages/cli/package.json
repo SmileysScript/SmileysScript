@@ -1,6 +1,6 @@
 {
   "name": "@smileysscript/cli",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "The CLI for SmileysScript.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
@@ -25,7 +25,7 @@
       "chalk": "^4.1.0",
       "commander": "^7.0.0",
       "glob": "^7.1.6",
-      "@smileysscript/util": "0.0.1"
+      "@smileysscript/util": "0.0.0"
   },
   "devDependencies": {
       "eslint": "^7.19.0",
@@ -38,6 +38,6 @@
       "prettier": "2.2.1"
   },
   "peerDependencies": {
-      "smileysscript": "0.0.1"
+      "smileysscript": "0.0.0"
   }
 }
