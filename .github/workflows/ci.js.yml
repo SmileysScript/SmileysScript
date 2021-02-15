@@ -80,3 +80,25 @@ jobs:
           name: Coverage Report
           path: coverage/
           retention-days: 7
+  generate-website:
+    name: Generate The Website + Documentation
+    needs: [lint, prettier-check]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Generate Website
+        working-directory: ./website
+        run: |
+          npm i --package-lock false
+          npm run build
+      - name: Artifact Website
+        uses: actions/upload-artifact@v2
+        with:
+          name: Website
+          path: website/build/
+          retention-days: 14
