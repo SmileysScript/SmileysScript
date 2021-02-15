@@ -14,7 +14,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/SmileysScript/SmileysScript/actions"><img alt="CI Status" src="https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/stable"></a>
-  <a href="https://codecov.io/gh/SmileysScript/SmileysScript"><img alt="Coverage Status" src="https://img.shields.io/codecov/c/github/SmileysScript/SmileysScript"></a>
+  <a href="https://codecov.io/gh/SmileysScript/SmileysScript"><img alt="Coverage Status" src="https://codecov.io/gh/SmileysScript/SmileysScript/branch/stable/graph/badge.svg?token=9CZQ2OYJSY"></a>
 </p>
 
 ## Quick Start
