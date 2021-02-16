@@ -20,6 +20,7 @@
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
   "dependencies": {
+    "@smileysscript/cli": "^0.0.1-beta.1",
     "@smileysscript/core": "^0.0.1-beta.1"
   },
   "devDependencies": {
