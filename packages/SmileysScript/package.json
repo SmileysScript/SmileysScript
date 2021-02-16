@@ -1,6 +1,6 @@
 {
   "name": "smileysscript",
-  "version": "0.0.1-beta.8",
+  "version": "0.0.1-beta.9",
   "description": "The Main SmileysScript Package.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
@@ -20,7 +20,7 @@
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
   "dependencies": {
-    "@smileysscript/cli": "^0.0.1-beta.8",
+    "@smileysscript/cli": "^0.0.1-beta.9",
     "@smileysscript/core": "^0.0.1-beta.1"
   },
   "devDependencies": {
