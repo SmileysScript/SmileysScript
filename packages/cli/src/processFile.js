@@ -1,4 +1,4 @@
-const smileysscript = require("smileysscript");
+const smileysscript = require("@smileysscript/core");
 const fs = require("fs");
 const path = require("path");
 

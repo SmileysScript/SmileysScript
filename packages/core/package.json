@@ -1,11 +1,11 @@
 {
-  "name": "smileysscript",
+  "name": "@smileysscript/core",
   "version": "0.0.1-beta.0",
-  "description": "The Main SmileysScript Package.",
+  "description": "The Core for SmileysScript.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
   "license": "MIT",
-  "main": "src/smileysscript.js",
+  "main": "src/core.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SmileysScript/SmileysScript.git"
@@ -20,7 +20,10 @@
     "url": "https://github.com/SmileysScript/SmileysScript/issues"
   },
   "dependencies": {
-    "@smileysscript/core": "^0.0.1-beta.0"
+    "@smileysscript/generator": "^0.0.1-beta.0",
+    "@smileysscript/lexer": "^0.0.1-beta.0",
+    "@smileysscript/parser": "^0.0.1-beta.0",
+    "@smileysscript/util": "^0.0.1-beta.0"
   },
   "devDependencies": {
     "eslint": "^7.19.0",

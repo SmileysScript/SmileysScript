@@ -22,6 +22,7 @@
     "smileysscript": "./bin/smileysscript.js"
   },
   "dependencies": {
+    "@smileysscript/core": "^0.0.1-beta.0",
     "@smileysscript/util": "^0.0.1-beta.0",
     "chalk": "^4.1.0",
     "commander": "^7.0.0",

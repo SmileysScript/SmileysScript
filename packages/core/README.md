@@ -8,8 +8,8 @@
   The language made of Smileys Compiling to JavaScript, allowing full connectivity!
 </p>
 
-# SmileysScript
+# SmileysScript Core
 
-Hi, Welcome to the main SmileysScript package!
+This package is the Core for SmileysScript!
 
-To learn how to write and use SmileysScript go [here](https://SmileysScript.JRed.io)!
+Learn more [here](https://SmileysScript.JRed.io)!
