@@ -1,6 +1,6 @@
 {
   "name": "@smileysscript/cli",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "description": "The CLI for SmileysScript.",
   "author": "JRed",
   "homepage": "https://SmileysScript.JRed.io",
@@ -22,7 +22,7 @@
     "smileysscript": "./bin/smileysscript.js"
   },
   "dependencies": {
-    "@smileysscript/core": "^0.0.1-beta.0",
+    "@smileysscript/core": "^0.0.1-beta.1",
     "@smileysscript/util": "^0.0.1-beta.0",
     "chalk": "^4.1.0",
     "commander": "^7.0.0",
