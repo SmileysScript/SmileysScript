@@ -27,12 +27,13 @@ To get started, you just have to follow some simple steps!
 For more info and guides, plus the CLI and Language Refrences, go to the [documentation](https://SmileysScript.JRed.io).
 
 ## Branches
-There are two major branches in this repo, beta and stable.  The stable branch is the branch used for releases and is hosted on npm.  The beta branch is where all new features go.
+There are three major branches in this repo: working, beta, and stable.  The working branch is where updates are added first.  The beta branch is where all new features go to be tested on npm before release.  The stable branch is the branch used for releases and is hosted on npm.
 
 Branch | Version | CI Status | Coverage
 ------ | ------- | --------- | --------
 stable | ![Stable Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/stable) | ![Stable Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/stable) | ![Stable Coverage](https://codecov.io/gh/SmileysScript/SmileysScript/branch/stable/graph/badge.svg?token=9CZQ2OYJSY)
 beta | ![Beta Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/beta) | ![Beta Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/beta) | ![Beta Coverage](https://codecov.io/gh/SmileysScript/SmileysScript/branch/beta/graph/badge.svg?token=9CZQ2OYJSY)
+working | ![Working Version](https://img.shields.io/github/lerna-json/v/SmileysScript/SmileysScript/working) | ![Working Status](https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/working) | ![Working Coverage](https://codecov.io/gh/SmileysScript/SmileysScript/branch/working/graph/badge.svg?token=9CZQ2OYJSY)
 
 ## FAQ
 
