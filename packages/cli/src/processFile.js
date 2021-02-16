@@ -4,7 +4,7 @@ const path = require("path");
 
 const processFile = (pathIn, file, pathOut) => {
   try {
-    const code = fs.readFileSync(path.resolve(pathIn, file));
+    const code = fs.readFileSync(file);
     const output = smileysscript.compile(code);
     fs.writeFileSync(
       path.resolve(pathOut, path.basename(file) + ".js"),
