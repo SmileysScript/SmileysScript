@@ -16,6 +16,10 @@
   <a href="https://github.com/SmileysScript/SmileysScript/actions"><img alt="CI Status" src="https://img.shields.io/github/workflow/status/SmileysScript/SmileysScript/CI/stable"></a>
   <a href="https://codecov.io/gh/SmileysScript/SmileysScript"><img alt="Coverage Status" src="https://codecov.io/gh/SmileysScript/SmileysScript/branch/stable/graph/badge.svg?token=9CZQ2OYJSY"></a>
 </p>
+<p align="center">
+  <a href="https://lerna.js.org/"><img alt="Lerna" src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg"></a>
+  <a href="https://github.com/facebook/jest"><img alt="Jest" src="https://jestjs.io/img/jest-badge.svg"></a>
+</p>
 
 ## Quick Start
 To get started, you just have to follow some simple steps!
