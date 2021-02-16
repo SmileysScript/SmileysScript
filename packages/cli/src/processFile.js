@@ -4,10 +4,10 @@ const path = require("path");
 
 const processFile = (pathIn, file, pathOut) => {
   try {
-    const code = fs.readFileSync(file, 'utf8');
+    const code = fs.readFileSync(file, "utf8");
     const output = smileysscript.compile(code);
     fs.writeFileSync(
-      path.resolve(pathOut, path.basename(file) + ".js"),
+      path.resolve(pathOut, file.slice(0, -path.extname(file).length) + ".js"),
       output
     );
   } catch (err) {
