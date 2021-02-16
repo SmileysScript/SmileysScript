@@ -6,9 +6,12 @@ const processFile = (pathIn, file, pathOut) => {
   try {
     const code = fs.readFileSync(file, "utf8");
     const output = smileysscript.compile(code);
+    const fileSplit = file.split(path.sep);
+    const pathInSplit = pathIn.split(path.sep);
+    const finalFile = path.resolve(shiftMulti(pathInSplit.length, fileSplit));
     const filePath = path.resolve(
       pathOut,
-      file.slice(0, -path.extname(file).length) + ".js"
+      finalFile.slice(0, -path.extname(file).length) + ".js"
     );
     ensureDirectoryExistence(filePath);
     fs.writeFileSync(path.resolve(filePath), output);
@@ -24,6 +27,13 @@ const ensureDirectoryExistence = (filePath) => {
   }
   ensureDirectoryExistence(dirname);
   fs.mkdirSync(dirname);
+};
+
+const shiftMulti = (times, array) => {
+  for (let i = 0; i < times; i++) {
+    array.shift();
+  }
+  return array;
 };
 
 module.exports = processFile;
